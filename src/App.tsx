@@ -1,15 +1,15 @@
 import React from 'react';
-import './styles/App.scss';
+import Menu from './components/Menu/Menu';
+import { GlobalStyle, MenuSection } from './styles/global';
 
 const App = () => {
   return (
-    <div className="wrapper">
-      <header className="App-header">
-        <p>
-          Typechecker website!
-        </p>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <MenuSection>
+        <Menu />
+      </MenuSection>
+    </>
   );
 }
 
